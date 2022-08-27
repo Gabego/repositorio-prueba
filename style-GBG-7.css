@@ -1,0 +1,80 @@
+/*- portafolio 7 - Gabriel Bello - Agosto 2022 -*/
+
+/*- configuracion de VARIABLES -*/
+:root {
+    --color-negro: #020403;
+    --color-gris: #ADADAD;
+    --color-branco: #FFFFFF;
+
+    --font-mobile-title: 40px;
+    --font-mobile-subtitle: 25px;
+    --font-mobile-subsection:18px;
+    --font-mobile-body: 16px;
+
+    --font-desktop-title: 150px;
+    --font-desktop-subtitle: 50px;
+    --font-desktop-subsection: 45px;
+    --font-desktop-body: 18px;
+
+}
+
+
+
+/*-- RESETEO de la pagina paa uso en diferentes navegadores --*/
+html {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0px;
+    color: var(--color-branco);
+    text-align: center;
+  }
+
+h1, h2, p {
+    margin: 0px;
+}
+
+/*-- Se configura TODO los elementos como "border-Box" donde el tamaño total
+incluye el margen, padding y su contenido --*/
+* {
+    box-sizing: border-box;
+    /*--border: 1px solid white;--*/
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    width: 1440px;
+    height: 3232px;
+    background-color: var(--color-negro);
+}
+
+.menu {
+    text-align: right;
+    gap: 2rem;
+    border: 1px solid salmon;
+}
+
+.menu__text {
+    text-decoration: none;
+    color: #FFFFFF;
+    width: 150px;
+  }
+
+  
+.menu2 {
+    border: 1px solid rgb(147, 230, 52);
+
+    display: grid;
+    grid-template-columns: 100px 150px 150px 150px 150px 150px; 
+    width: auto;
+    height: 40px; 
+}
+
+.menu2__text {
+    text-decoration: none;
+    color: #FFFFFF;
+    width: 10px;
+
+  }
