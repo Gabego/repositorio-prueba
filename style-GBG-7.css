@@ -5,14 +5,15 @@
     --color-negro: #020403;
     --color-gris: #ADADAD;
     --color-branco: #FFFFFF;
+    --color-gris-habilidades: #131212;
 
     --font-mobile-title: 40px;
     --font-mobile-subtitle: 25px;
     --font-mobile-subsection:18px;
     --font-mobile-body: 16px;
 
-    --font-desktop-title: 150px;
-    --font-desktop-subtitle: 50px;
+    --font-desktop-title: 80px; /*-150px; -*/
+    --font-desktop-subtitle:50px; /* 50px; */
     --font-desktop-subsection: 45px;
     --font-desktop-body: 18px;
 
@@ -48,6 +49,7 @@ body {
     width: 1440px;
     height: 3232px;
     background-color: var(--color-negro);
+    border: 1px dashed darkcyan;
 }
 
 .menu {
@@ -65,11 +67,12 @@ body {
   
 .menu2 {
     border: 1px solid rgb(147, 230, 52);
-
     display: grid;
-    grid-template-columns: 100px 150px 150px 150px 150px 150px; 
+    grid-template-columns: 150px 150px 150px 150px 150px 150px; 
     width: auto;
+    margin: auto;
     height: 40px; 
+
 }
 
 .menu2__text {
@@ -78,3 +81,298 @@ body {
     width: 10px;
 
   }
+
+.principal {
+    border: 1px solid seagreen;
+    margin: auto;
+    width: 800px;
+    padding: 50px;
+
+}
+
+.subtitle {
+    font-size: var(--font-desktop-subtitle);
+    color: var(--color-gris);
+}
+
+.title {
+    font-size: var(--font-desktop-title);
+}
+
+.iconos {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    border: 1px dashed lawngreen;
+    margin: auto;
+}
+
+.principal__icono {
+    width: 60px;
+    height: 60px;
+    margin: auto;
+}
+
+
+
+.iconos img:nth-child(3) {
+    grid-column: 4/5;
+}
+
+.iconos img:nth-child(2) {
+    grid-column: 3/4;
+}
+
+.iconos img:nth-child(1) {
+    grid-column: 2/3;
+}
+
+.acerca_de_mi {
+    border: 1px solid rgb(5, 61, 28);
+    margin: auto;
+    width: 800px;
+    padding: 50px;
+
+}
+
+.acerca_de_mi__texto {
+    font-size: 20px;
+    border: 1px dashed rgb(139, 46, 97);
+
+}
+
+.acerca_de_mi__subtitle {
+    color: var(--color-branco);
+}
+
+.habilidades {
+    border: 1px solid rgb(235, 117, 6);
+    margin: auto;
+    width: 1200px;
+    padding: 50px;
+
+}
+
+.habilidades__iconos {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    border: 1px dashed lawngreen;
+    margin: 10px;
+}
+
+.habilidades__circulos {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: var(--color-gris-habilidades) ;
+}
+
+.hab__cir1 {
+    position: relative;
+    bottom: -60px;
+    left: 274px;
+}
+
+.hab__cir2 {
+    position: relative;
+    bottom: -60px;
+    left: -274px;
+    z-index: -1;
+}
+
+.hab__cir3 {
+    position: relative;
+    bottom: -60px;
+    left: 274px;
+}
+
+.hab__cir4 {
+    position: relative;
+    bottom: -60px;
+    left: -274px;
+    z-index: -1;
+}
+.habilidades_icon {
+    border: 1px dashed rgb(234, 240, 229);
+    width: 280px;
+    margin: 50px;
+    z-index: 0;
+}
+
+.habilidades_img {
+    margin: 0px;
+}
+
+.hab__cir5 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid var(--color-branco) ;
+    position: relative;
+    bottom: 90px;
+    left: 1140px;
+}
+
+.hab__cir6 {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid var(--color-branco) ;
+    position: relative;
+    bottom: 99px;
+    left: 993px;
+}
+    
+.hab__cir7 {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 1px solid var(--color-branco) ;
+    position: relative;
+    bottom: 108px;
+    left: 567px;
+}
+
+.experiencia{
+    border: 1px solid rgb(235, 117, 6);
+    margin: auto;
+    width: 800px;
+    padding: 0px;
+
+}
+
+.experiencia__datos {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows:  20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
+    margin: auto;
+   border: 1px dashed lawngreen;
+    border: 1px solid darkcyan;
+}
+
+.experiencia__datos div {
+    border: 1px solid darkcyan;
+    text-align: left;
+    font-size: 20px;
+}
+
+.experiencia__datos div:nth-child(1) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.experiencia__datos div:nth-child(2) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    color: var(--color-gris)
+}
+
+.experiencia__datos div:nth-child(3) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    color: var(--color-gris);
+}
+
+.experiencia__datos div:nth-child(4) {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+.experiencia__datos div:nth-child(5) {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    color: var(--color-gris)
+}
+.experiencia__datos div:nth-child(6) {
+    grid-column: 1/2;
+    grid-row: 6/7;
+    color: var(--color-gris);
+}
+.experiencia__datos div:nth-child(7) {
+    grid-column: 2/3;
+    grid-row: 8/9;
+}
+.experiencia__datos div:nth-child(8) {
+    grid-column: 2/3;
+    grid-row: 9/10;
+    color: var(--color-gris)
+}
+
+.experiencia__datos div:nth-child(9) {
+    grid-column: 1/2;
+    grid-row: 10/11;
+    color: var(--color-gris);
+}
+
+.portafolio {
+    border: 1px solid rgb(235, 117, 6);
+    margin: auto;
+    width: 1440px;
+    padding: 50px;
+
+}
+
+.portafolio__datos {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows:  auto;
+    margin: auto;
+   border: 1px dashed lawngreen;
+}
+
+.portafolio__datos div{
+
+   border: 1px dashed rgb(95, 16, 65);
+}
+
+.portafolio__img {
+    height: 250px;
+}
+
+.contacto {
+    border: 1px solid rgb(235, 6, 6);
+    margin: auto;
+    width: 800px;
+    padding: 50px;
+
+}
+
+.contacto__datos {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows:  auto;
+    margin: auto;
+   border: 1px dashed lawngreen;
+}
+
+.contacto__celda {
+    height: 150px;
+}
+
+.contacto__img {
+    margin: 20px;
+}
+.contacto__circulo1 {
+    position: relative;
+    bottom: -7px;
+    left: 209px;
+    width: 65px;
+    height: 65px;
+    border: 1px solid var(--color-gris);
+    border-radius: 50%;
+}
+
+.contacto__circulo2 {
+    position: relative;
+    bottom: -7px;
+    left: -141px;
+    width: 65px;
+    height: 65px;
+    border: 1px solid var(--color-gris);
+    border-radius: 50%;
+}
+
+.footer {
+    width: 600px;
+    margin: 80px auto;
+   border: 1px dashed lawngreen;
+}
